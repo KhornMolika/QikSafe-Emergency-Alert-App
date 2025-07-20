@@ -1,21 +1,20 @@
-package com.example.qiksafeemergencyalertapp.view
+package com.example.qiksafeemergencyalertapp.ui.view.auth
 
-import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.qiksafeemergencyalertapp.R
-import com.example.qiksafeemergencyalertapp.databinding.ActivityMainBinding
+import com.example.qiksafeemergencyalertapp.databinding.ActivityLoginBinding
 
-class  MainActivity : AppCompatActivity() {
-    lateinit var binding: ActivityMainBinding
+class LoginActivity : AppCompatActivity() {
+    lateinit var binding: ActivityLoginBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
 
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
@@ -24,12 +23,9 @@ class  MainActivity : AppCompatActivity() {
             insets
         }
 
-        binding.btnGoLogin.setOnClickListener {
-            startActivity(Intent(this, LoginActivity::class.java))
+        binding.btnLogin.setOnClickListener {
+            finish()
         }
 
-        binding.btnGoRegister.setOnClickListener {
-            startActivity(Intent(this, RegisterActivity::class.java))
-        }
     }
 }

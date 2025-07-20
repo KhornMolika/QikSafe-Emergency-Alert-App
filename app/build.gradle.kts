@@ -44,7 +44,8 @@ android {
                     "src\\main\\res", "src\\main\\res\\layouts\\layout_login",
                     "src\\main\\res", "src\\main\\res\\layouts\\layout_register",
                     "src\\main\\res", "src\\main\\res\\layouts\\layout_main",
-                    "src\\main\\res", "src\\main\\res\\layouts\\layout_otp", "src\\main\\res", "src\\main\\res\\layouts\\layout_main"
+                    "src\\main\\res", "src\\main\\res\\layouts\\layout_otp",
+                    "src\\main\\res", "src\\main\\res\\layouts\\layout_main"
                 )
             }
         }
